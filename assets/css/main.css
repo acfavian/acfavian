@@ -6258,6 +6258,32 @@ input, select, textarea {
 		}
 	}
 
+	/* BUY SPECIAL HERO */
+
+	.hero_box_buy_friends {
+		position: relative;
+		background-color: #3f0202;
+	}
+
+	.hero_box_buy_friends figure {
+		height: auto;
+	}
+
+	.image_buy_friends {
+		width: 100%;
+		height: 100%;
+		margin-top: 25px;
+	}
+	
+	.buy_friends_text_box {
+		position: absolute;
+		top: 30%;
+		left: 6%;
+		width: 65%;
+		/* display: flex; */
+	}
+
+
 
 	/* about muuds */
 
@@ -6281,11 +6307,11 @@ input, select, textarea {
 		width: 50%;
 		/* display: flex; */
 	}
+	
 
 	.about_body_container {
 		width: auto;
 	}
-
 
 	.background_container_about_muuds {
 		position: relative;
@@ -6325,6 +6351,10 @@ input, select, textarea {
 			top: 20%;
 		}
 
+		.buy_friends_text_box {
+			top: 20%;
+		}
+
 		.title_container_about_muuds {
 			font-size: 60px;
 		}
@@ -6337,15 +6367,26 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.buy_friends_text_box {
+			position: unset;
+			padding: 2em 2em 2em 2em;
+			width: 100%;
+		}
+
 		.title_container_about_muuds {
 			font-size: 38px;
 			left: 31px;
 		}
 
 	}
+	
 	@media screen and (max-width:480px) {
 		.about_muuds_text_box {
 			text-align: center;
+		}
+
+		.image_buy_friends {
+			margin-top: 40px;
 		}
 
 		.title_container_about_muuds {
