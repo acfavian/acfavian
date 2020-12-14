@@ -6091,7 +6091,7 @@ input, select, textarea {
 	.background_questions {
 		height: 8em;
 		width: auto;
-		background-image: url("images/questions.png");
+		background-image: url("images/questions.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -6197,6 +6197,7 @@ input, select, textarea {
 		background-image: url("images/sandia.jpg");
 		background-repeat: no-repeat;
 		background-size: 100% auto;
+		background-position: 50% 56%;
 	}
 
   .toronja_img {
