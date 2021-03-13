@@ -32,3 +32,33 @@ sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
+
+// -------------------------------------------------------
+
+// const how_do_bar = document.querySelector(".bar_index_how_do");
+// const sectionFour = document.querySelector(".hero_box_how_do");
+// // const sectionFive = document.querySelector(".bar_index_how_do");
+
+// const sectionFourOptions = {
+//   rootMargin: "0.5px 0px 0px 0px"
+// };
+
+// const sectionFourObserver = new IntersectionObserver
+// (function(
+//   entries,
+//   sectionFourObserver,
+// ) {
+//   entries.forEach(entry => {
+//     if (!entry.isIntersecting) {
+//       how_do_bar.style.position = "fixed";
+//       sectionFour.classList.add("no_margin")
+//     } else {
+//       how_do_bar.style.position = "relative";
+//       sectionFour.classList.remove("no_margin")
+//     }
+//   });
+// },
+// sectionFourOptions);
+
+// sectionFourObserver.observe(sectionFour);
+

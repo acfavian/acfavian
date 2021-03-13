@@ -159,6 +159,10 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
+	.no-border-a {
+		border-bottom: none;
+	}
+
 		a:hover {
 			border-bottom-color: transparent;
 			color: #ffffff;
@@ -176,6 +180,19 @@ input, select, textarea {
 
 	.b_3 {
 		color: #424242;
+	}
+
+	.resaltado_promo {
+		color: #8038c1;
+	}
+
+	.resaltado_promo_black {
+		/* color: #bbc2ff; */
+		color: #8be89b;
+	}
+
+	.resaltado_promo_set {
+		color: #56ea6f
 	}
 
 	em, i {
@@ -5329,6 +5346,22 @@ input, select, textarea {
 								}
 							}
 
+							@media screen and (min-width: 1281px) {
+
+								.indicator_menu {
+									position: absolute;
+									top: 15px;
+									right: 13px;
+									box-shadow: 3px 6px 6px 0px rgb(0 0 0 / 25%);
+									border-radius: 30px;
+									background-color: red;
+									width: 11px;
+									height: 11px;
+								}
+
+							}
+
+
 							@media screen and (max-width: 736px) {
 
 								#page-wrapper {
@@ -6555,19 +6588,20 @@ input, select, textarea {
 	}
 
 	.options_buy_container {
-		padding: 0em 8em 0em 8em;
-
+		margin: auto;
+		padding: 0em 2em 0em 2em;
 	}
 
 	.options_buy {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		column-gap: 25px;
 	}
 
 	.buy_container {
 		width: auto;
 		margin: 0;
+		max-width: 500px;
 	}
 
   .buy_image_container {
@@ -6649,6 +6683,444 @@ input, select, textarea {
 	}
 }
 
-	
 
+ /* COMO SE HACE */
+
+
+	.hero_box_how_do {
+		background-image: url(images/cosmos_age.jpg);
+		max-width: 2100px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		max-width: 2200px;
+		height: 550px;
+
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.hero_title_how_do {
+		font-size: 28pt;
+		line-height: 1.2;
+	}
+
+	.logo_muuds_how_do {
+		max-height: 60px;
+	}
+
+
+	.bar_index_how_do {
+		position: -webkit-sticky;
+		position: sticky;
+		z-index: 10000;
+		top: 0px;
+		width: 100%;
+		height: 60px;
+		background-color: #000;
+	}
+
+	nav .links_how_do {
+		float: right;
+		padding: 0em 8em 0em 8em;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	nav .links_how_do li {
+		list-style: none;
+	}
+
+	nav .links_how_do li a {
+		display: block;
+		padding: 1em;
+		color: rgb(255, 255, 255, 0.9);
+		/* text-transform: uppercase; */
+	}
+
+	@media screen and (max-width: 1280px) {
+		nav .links_how_do {
+			padding: 0em 3em 0em 3em;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		nav .links_how_do {
+			display: none;
+		}
+	}
 	
+	/* HOW DO SECTIONS */
+
+	.how_do_sections {
+		width: 100%;
+		height: auto;
+		background-color: #fff;
+	}
+
+	.how_do_container {
+		margin: 0em auto;
+		max-width: 1680px;
+		padding: 3em 0em 3em 0em;
+	}
+
+	.text_how_do_part {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #424242;
+		text-align: center;
+		gap: 36px;
+		padding: 0em 3em 0em 3em;
+	}
+
+	.topic_how {
+		font-weight: 600;
+	}
+
+	.title_how_do {
+		margin: 0;
+	}
+	
+	.pics {
+		height: auto;
+		padding: 3em 3em 0em 3em;
+		color: #424242;
+	}
+
+	.pics_group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+		margin-top: 4em;
+		color: #424242;
+	}
+
+	.pics_mprimas {
+		padding: 3em 0em 0em 0em;
+		height: auto;
+		color: #424242;
+		display: flex;
+		padding-bottom: 3em;
+	}
+
+
+	/* media 600px change class
+	.desc_pics_how_do
+	.pics (padding laterales) 
+	.how_do_container (center all, padding up down)
+	.pics_group (column)
+	*/
+	
+	/* TAMAÑOS DEFINIDOS IMAGENES */
+
+	.img_diseño_1 img{
+		width: 100%;
+		max-width: 864px;
+	}
+
+	.img_sabor_1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1em;
+	}
+
+	.img_sabor_1 img {
+		width: 100%;
+		max-width: 1048px;
+		margin-bottom: 0.5em;
+	}
+
+	.img_sabor_2 img {
+		width: 100%;
+		max-width: 472px;
+	}
+
+	.img_sabor_3 img {
+		width: 100%;
+		max-width: 720px;
+	}
+
+	/* M.PIRMAS */
+
+	.img_primas_1 img {
+		width: 100%;
+		max-width: 336px;
+	}
+
+	.img_primas_1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.m_primas_part1, 
+	.m_primas_part2 {
+		display: flex;
+	}
+
+	.flags img{
+		margin-top: 24px;
+		max-height: 38px;
+		width: auto;
+	}
+
+	.img_primas_2 img{
+		width: 100%;
+		max-width: 720px;
+	}
+
+	.img_primas_3 img{
+		width: 100%;
+		max-width: 520px;
+	}
+
+	/* REACCION */
+
+	.img_reaccion_1 {
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.img_reaccion_1 img{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.img_reaccion_2 {
+		width: 100%;
+		max-width: 602px;
+	}
+
+	.img_reaccion_2 img{
+		width: 100%;
+		max-width: 602px;
+	}
+
+	/* MIX */
+
+	.img_mezcla_1 {
+		width: 100%;
+		max-width: 602px;
+	}
+
+	.img_mezcla_1 img {
+		width: 100%;
+		max-width: 602px;
+	}
+
+	.img_mezcla_2 img {
+		width: 100%;
+		max-width: 1456px;
+	}
+
+	.img_mezcla_3 {
+		width: 100%;
+		max-width: 650px;
+	}
+
+	.img_mezcla_3 img {
+		width: 100%;
+		max-width: 650px;
+	}
+
+	.img_calidad_1 {
+		width: 100%;
+		max-width: 660px;
+	}
+	.img_calidad_1 img {
+		width: 100%;
+		max-width: 660px;
+	}
+
+	.img_calidad_2 {
+		width: 100%;
+		max-width: 590px;
+	}
+	.img_calidad_2 img {
+		width: 100%;
+		max-width: 590px;
+	}
+
+	.img_calidad_3  {
+		width: 100%;
+		max-width: 595px;
+	}
+
+	.img_calidad_3 img {
+		width: 100%;
+		max-width: 595px;
+	}
+
+	.img_mezcla_4 {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.img_mezcla_4 img {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.img_final_1 {
+		width: 100%;
+		max-width: 720px;
+	}
+
+	.img_final_1 img {
+		width: 100%;
+		max-width: 720px;
+	}
+
+	.img_final_2 {
+		width: 100%;
+		max-width: 730px;
+	}
+
+	.img_final_2 img {
+		width: 100%;
+		max-width: 730px;
+	}
+
+	.mezcla_bloque_fin {
+		display: flex;
+		gap: 80px;
+		justify-content: center;
+	}
+
+	.calidad_bloque1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.final_how_do_container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		color: #424242;
+		padding: 4em 2em 5em 2em;
+		margin: 0 auto;
+		background-color: #fff;
+	}
+
+	/* COMPLEMENTOS */
+
+	.img_order_column {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+	
+	.no_center {
+		align-items: normal;
+		margin: 0;
+	}
+
+	.display_none {
+		display: none;
+	}
+
+
+	@media screen and (max-width: 980px) {
+		.pics_mprimas {
+			display: flex;
+			flex-direction: column;
+			gap: 42px;
+			align-items: center;
+		}
+
+		.pics_group {
+			gap: 40px;
+		}
+
+		.hero_title_how_do {
+			font-size: 22pt;
+		}
+
+		.bar_index_how_do {
+			display: none;
+		}
+	} 
+
+	@media screen and (max-width: 1280px) and (min-width: 736px) {
+
+		.display_logo {
+			display: none;
+		}
+
+	}
+
+
+	@media screen and (max-width: 600px) {
+		.hero_box_how_do {
+			height: 450px;	
+		}
+
+		.logo_muuds_how_do {
+			max-height: 50px;
+		}
+
+		.hero_title_how_do {
+			padding: 2em 1em 0em 1em;
+			font-size: 16pt;
+			margin-bottom: 1em;
+		}
+
+		.m_primas_part1, 
+		.m_primas_part2 {
+			display: flex;
+			flex-direction: column;
+			gap: 42px;
+		}
+
+		.pics_group {
+			flex-direction: column;
+			margin-top: 2em;
+		}
+
+		.pics {
+			padding: 2em 0em 0em 0em;
+		}
+
+		.desc_pics_how_do {
+			padding: 0em 2em;
+			text-align: center;
+			margin-top: 0.5em;
+		}
+
+		.how_do_container {
+			padding: 3em 0em 0em 0em;
+		}
+
+		.mezcla_bloque_fin {
+			flex-direction: column;
+			align-items: center;
+			gap: 40px;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+		.text_how_do_part {
+			padding: 0em 2em 0em 2em;
+		}
+
+		.img_sabor_2 img, .img_sabor_2 {
+			max-width: 320px;
+		}
+	} 
